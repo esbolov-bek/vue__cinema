@@ -1,0 +1,224 @@
+@media(max-width:1440px) {
+    .premier {
+        background: linear-gradient(90deg, #DEF7FF 0%, #F4FCFF 45.64%, rgba(255, 255, 255, 0) 100.72%);
+    }
+}
+
+@media(max-width:1120px) {
+    .header {
+        height: 490px;
+    }
+
+    .collections__content {
+        column-gap: 20px;
+        overflow-x: scroll;
+        padding-bottom: 10px;
+        scroll-snap-type: x mandatory;
+    }
+
+    .collections__item {
+        flex-shrink: 0;
+        scroll-snap-align: center;
+    }
+}
+
+@media(max-width:1024px) {
+    .films__content {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .films__item {
+        width: 332px;
+    }
+
+    .premier {
+        background: linear-gradient(90deg, #DEF7FF 0%, #F4FCFF 35.64%, rgba(255, 255, 255, 0) 100.72%);
+    }
+}
+
+@media(max-width:768px) {
+    .header {
+        height: max-content;
+        padding: 30px 0;
+    }
+
+    .series__item:nth-of-type(2) {
+        grid-column: span 4;
+        grid-row: 3;
+    }
+
+    .series__item:nth-of-type(2) .series__img {
+        object-position: 0 -145px;
+    }
+
+    .series__item:nth-of-type(3),
+    .series__item:nth-of-type(4),
+    .series__item:nth-of-type(5),
+    .series__item:nth-of-type(6) {
+        grid-column: span 2;
+    }
+}
+
+@media(max-width:723px) {
+    .films__item {
+        width: 255px;
+    }
+}
+
+@media(max-width:627px) {
+    .header__title {
+        font-size: 50px;
+        line-height: 100%;
+        margin-bottom: 10px;
+    }
+
+    .header__text {
+        margin-bottom: 20px;
+    }
+    .footer__content{
+        justify-content: center;
+        row-gap: 15px;
+    }
+}
+
+@media(max-width:575px) {
+    .menu-btn {
+        display: flex;
+    }
+
+    .nav__list {
+        position: fixed;
+        flex-direction: column;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        padding: 50px 30px;
+        row-gap: 20px;
+        backdrop-filter: blur(15px);
+        box-shadow: -5px -1px 20px rgb(0 0 0 / 48%);
+        bottom: 0;
+        transform: translateX(-107%);
+        transition: 0.3s linear;
+    }
+
+    .nav__link {
+        padding: 0;
+    }
+
+    .nav {
+        padding: 15px 0;
+    }
+
+    .menu-btn:focus>span {
+        opacity: 0;
+    }
+
+    .menu-btn:focus::before {
+        transform: translateY(11px) rotate(45deg);
+    }
+
+    .menu-btn:focus::after {
+        transform: translateY(-11px) rotate(-45deg);
+    }
+
+    .menu-btn:focus+.nav__list {
+        transform: translateX(0);
+    }
+
+    .premier {
+        padding-top: 20px;
+        padding-bottom: 30px;
+        background: #fff;
+    }
+
+    .premier__video {
+        display: none;
+    }
+
+    .premier__text {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .series__item:nth-of-type(2) .series__img {
+        object-position: top;
+    }
+
+    .series__text {
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-align: justify;
+        margin: 10px 0;
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+@media(max-width:496px) {
+    .header__title {
+        font-size: 40px;
+    }
+
+    .header__text {
+        font-size: 15px;
+    }
+
+    .header__btn {
+        width: 100%;
+    }
+
+    .premier__banner {
+        width: 100%;
+    }
+}
+
+@media(max-width:425px) {
+    .premier__text {
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-line-clamp: 6;
+        -webkit-box-orient: vertical;
+    }
+
+    .series__item:nth-of-type(3),
+    .series__item:nth-of-type(4),
+    .series__item:nth-of-type(5),
+    .series__item:nth-of-type(6) {
+        grid-column: span 4;
+    }
+
+    .series__item:nth-of-type(1) .series__name {
+        font-size: 27px;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+    .series__item:nth-of-type(1){
+        grid-row: 1;
+    }
+    .series__text {
+        display: none;
+    }
+}
+
+@media(max-width:403px) {
+    .header__title {
+        font-size: 31px;
+    }
+}
+
+@media(max-width:375px) {
+    .header__buttons {
+        flex-direction: column;
+    }
+}
+
+@media(max-width:360px) {
+    .collections__item {
+        max-width: 350px;
+        width: 100%;
+    }
+}
